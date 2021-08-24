@@ -10,7 +10,6 @@ Welcome to the vast number of contributors for multilingual documents to provide
 
 **Solemnly state: At present, developers have not developed Linux, macOS version, all versions except Windows version are not official version, please consider the consequences before use! Please refer to for details[Official version & ported version](#2ndVerify 的官方版本与移植版本)**
 
-[TOC]
 
 ## What's the use of 2ndVerify? How does it work?
 

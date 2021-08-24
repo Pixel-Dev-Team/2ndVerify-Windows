@@ -93,6 +93,6 @@ void printUI(int wrongs)
 }
 int main()
 {
-    system("shutdown /r /t 20 /c \"2ndVerify Code Error\"");
+    system("shutdown /r /t 20 /c \"2ndVerify Check\"");
     printUI(wrongTimes);
 }
