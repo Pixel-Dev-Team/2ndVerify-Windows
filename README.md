@@ -77,7 +77,7 @@ const string secode
 
 - [ ] 通过时间戳的变化来实时更新 Code
 
-- [ ] 当您忘记您的 Code 时，可以通过回答预设问题来进行
+- [ ] 当您忘记您的 Code 时，可以通过回答预设问题来进行重置 Code
 
 - [ ] 联网登录到 [PixELBlog](https://blog.pixelwine.top) 账号，远程管理您的计算机（们）
 
@@ -87,7 +87,7 @@ const string secode
 
 - [ ] 支持生物识别（有可能开发特殊的硬件）
 
-  (画大饼ing...)
+  (画饼ing...)
 
 ## 2ndVerify 的官方版本与移植版本
 
