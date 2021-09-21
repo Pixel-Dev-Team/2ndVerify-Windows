@@ -8,7 +8,7 @@
 
 **下面所有的说明都是针对 2ndVerify Version Windows-alpha ！！！请勿在其他OS或 2ndVerify 其他版本（有些操作可能兼容）上操作！！！**
 
-**郑重声明：目前开发者并未开发 Linux、macOS 版本，除 Windows 版本外其他所有版本均非官方版本，请在使用前考虑后果！具体请参考[官版&移植版](#2ndVerify 的官方版本与移植版本)**
+**郑重声明：目前开发者并未开发 Linux、macOS 版本，除 Windows 版本外其他所有版本均非官方版本，请在使用前考虑后果！具体请参考[官版&移植版](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README.md#2ndverify-%E7%9A%84%E5%AE%98%E6%96%B9%E7%89%88%E6%9C%AC%E4%B8%8E%E7%A7%BB%E6%A4%8D%E7%89%88%E6%9C%AC)**
 
 
 ## 2ndVerify 有什么用？它是怎样运作的？
