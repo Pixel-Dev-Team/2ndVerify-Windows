@@ -18,7 +18,7 @@
 
 ## 如何使用 2ndVerify ？
 
-1. 更改 2ndVerify.cpp 第3、4行 const 变量[释义见此](#备注：CONST变量含义)
+1. 更改 2ndVerify.cpp 第3、4行 const 变量[释义见此](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README.md#%E5%A4%87%E6%B3%A8const%E5%8F%98%E9%87%8F%E5%90%AB%E4%B9%89)
 2. 编译 2ndVerify.cpp 为 2ndVerify.exe
 3. 将 2ndVerify.exe 加入开机启动项
 4. Enjoy~
@@ -99,6 +99,5 @@ const string secode
 - 经官方验证的移植版本：指经过 PixelWine 三机(VirtualBox Windows XP & VirtualBox Windows 7 & Physical Windows 10)验证可行性的移植版本。目前尚没有。
 - 移植版本：指经过 PixelWine 书面或 Email 许可，且非由 PixelWine 开发的 2ndVerify 版本。目前尚没有。
 - 未经官方许可的移植版本（又称“小道版本”）：指未经过 PixelWine 书面或 Email 许可，且非由 PixelWine 开发的 2ndVerify 版本。此项不进行统计。
-
 
 
