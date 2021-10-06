@@ -1,4 +1,16 @@
+/*
+ * @Author: Eric Liu
+ * @Date: 2021-09-12 17:46:20
+ * @LastEditors: PixelWine
+ * @LastEditTime: 2021-10-06 22:30:54
+ * @FilePath: \workspace\CleanSpace_NOProtected\CPP-2ndVerify\2ndVerify_CHS.cpp
+ * @Encode: UTF-8
+ * (c)2021 Eric Liu(aka PixelWine, PWEL or Fagri). All rights reserved.
+ * @LICENSE: GNU General Public License 3.0
+ * @description: v1.0
+ */
 #include<bits/stdc++.h>
+#define __2NDVERIFY_version__ 1.0
 using namespace std;
 const int maxWrongTimes = 3;
 const string secode = "DEFAULT_CODE@"; // second_code -> seccode -> secode
@@ -6,8 +18,8 @@ int wrongTimes;
 void reboot(void)
 {
     system("COLOR B0");
-    printf("Strict Data Protection: Sorry, you have tried too many times, and the system will restart in 3 seconds.\n");
-    system("shutdown /r /t 3 /c \"2ndVerify Code Error\"");
+    printf("严格数据保护SDP: 对不起, 您尝试的次数过多, 系统已启动SDP，将会在3秒内重新启动.\n");
+    system("shutdown /r /t 3 /c \"2ndVerify 错误\"");
     return;
 }
 bool isRightCode(string code)
@@ -21,7 +33,7 @@ bool isRightCode(string code)
 void codeWrong(void)
 {
     system("COLOR 4F");
-    printf("The Code you entered is wrong.");
+    printf("您输入的代码不正确");
 
 }
 bool checkWrongMax(void)
@@ -35,21 +47,21 @@ void printUI(int wrongs)
     if(wrongs>0)
     {
         system("COLOR 9F");
-        cout<<"Please input your code again..."<<endl;
+        cout<<"请您再次输入二次验证代码"<<endl;
         string inputCode;
         cin>>inputCode;
         if(isRightCode(inputCode))
         {
-            cout<<"Welcome! Your code is RIGHT!"<<endl;
+            cout<<"欢迎! 您的代码是正确的！"<<endl;
             system("shutdown /a");
-            cout<<"Press Any Key to Continue..."<<endl;
+            cout<<"按回车键进入系统"<<endl;
             system("pause>nul");
             exit(0);
         }
         else
         {
             codeWrong();
-            cout<<"Press any key to Continue..."<<endl;
+            cout<<"按回车键继续"<<endl;
             system("pause>nul");
             wrongTimes++;
             if(checkWrongMax())
@@ -62,25 +74,25 @@ void printUI(int wrongs)
     else
     {
         system("COLOR 9F");
-        printf("The system administrator has set Strict Data Protection for this computer.\n");
-        printf("Please use the 2ndCode published by the administrator to log in to this computer.\n");
-        cout<<"Now please input your code..."<<endl;
+        printf("系统管理员已经为这台电脑设置严格数据保护。\n");
+        printf("请使用管理员给予的二次验证代码登录这台计算机。.\n");
+        cout<<"现在请输入你的代码:"<<endl;
         string inputCode;
         cin>>inputCode;
         system("cls");
-        cout<<"The system is checking the code you entered..."<<endl;
+        cout<<"系统正在检查您输入的代码…"<<endl;
         if(isRightCode(inputCode))
         {
-            cout<<"Welcome! Your code is RIGHT!"<<endl;
+            cout<<"欢迎! 您的代码是正确的!"<<endl;
             system("shutdown /a");
-            cout<<"Press Any Key to Continue..."<<endl;
+            cout<<"按回车键继续…"<<endl;
             system("pause>nul");
             exit(0);
         }
         else
         {
             codeWrong();
-            cout<<"Press any key to Continue..."<<endl;
+            cout<<"按任意键继续…"<<endl;
             system("pause>nul");
             wrongTimes++;
             if(checkWrongMax())
@@ -93,6 +105,7 @@ void printUI(int wrongs)
 }
 int main()
 {
+    system("chcp 65001");
     system("shutdown /r /t 20 /c \"2ndVerify Check\"");
     printUI(wrongTimes);
 }

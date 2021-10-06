@@ -1,12 +1,14 @@
 # 2ndVerify-Windows
 
+> P.S. The contents of the following two documents may not have been updated for a long time, so be careful please.
+
 [繁體中文版本 (By Bing Microsoft Translator)](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README_T.md)
 
 [English Version (By Bing Microsoft Translator)](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README_EN.md)
 
 欢迎广大贡献者为多语言文档提供人工翻译！
 
-**下面所有的说明都是针对 2ndVerify Version Windows-alpha ！！！请勿在其他OS或 2ndVerify 其他版本（有些操作可能兼容）上操作！！！**
+**下面所有的说明都是针对 2ndVerify Version win-1.0 ！！！请勿在其他 OS 或 2ndVerify 其他版本（有些操作可能兼容）上操作！！！**
 
 **郑重声明：目前开发者并未开发 Linux、macOS 版本，除 Windows 版本外其他所有版本均非官方版本，请在使用前考虑后果！具体请参考[官版&移植版](#2ndVerify 的官方版本与移植版本)**
 
@@ -14,13 +16,13 @@
 ## 2ndVerify 有什么用？它是怎样运作的？
 
 - 2ndVerify 可以帮您2次锁定您的计算机（如果您开启了系统盘 BitLocker，那么是3次），保障您的数据安全
-- 它通过执行 Windows 系统内置的```shutdown```指令来管理您的计算机的开关机状态，几乎不需要任何外置库。
+- 它通过执行 Windows 系统内置的 ```shutdown``` 指令来管理您的计算机的开关机状态，几乎不需要任何外置库。
 
 ## 如何使用 2ndVerify ？
 
-1. 更改 2ndVerify.cpp 第3、4行 const 变量[释义见此](#备注：CONST变量含义)
-2. 编译 2ndVerify.cpp 为 2ndVerify.exe
-3. 将 2ndVerify.exe 加入开机启动项
+1. 更改 2ndVerify_CHS.cpp 第3、4行 const 变量[释义见此](#备注：CONST变量含义)
+2. 编译 2ndVerify_CHS.cpp 为 2ndVerify_CHS.exe
+3. 将 2ndVerify_CHS.exe 加入开机启动项
 4. Enjoy~
 
 ### 备注：CONST变量含义
@@ -45,31 +47,32 @@ Line 4:
 const string secode
 ```
 
-默认值：2NDVERIFY
+默认值：DEFAULT_CODE@
 
-含义：参考注释。```// second_code -> seccode -> secode```
+含义：密码
 
 调用：在```isRightCode() ```函数中有调用
 
-重要性：推荐修改
+重要性：⭐推荐修改
 
 ## 忘记了 Code 怎么办？
 
-- 通过 PE 删除开机启动项
+- 通过 PE 或安全模式删除开机启动项
+- 通过特殊手段将 Save2ndVerify.bat 传入电脑 开机**眼疾手快地**执行该文件 即可解除***当时***的 2ndVerify 限制
 - and so on.
 
 
 ## 2ndVerify 有哪些已开发或待开发的功能 ？
 
-- [x] 验证输入的 Code 和存储的 Code 是否一致
+- [x] <del>验证输入的 Code 和存储的 Code 是否一致</del>
 
-- [x] 限制最大尝试次数
+- [x] <del>限制最大尝试次数</del>
 
-- [x] 达到最大尝试次数后自动重新启动
+- [x] <del>达到最大尝试次数后自动重新启动</del>
 
-- [x] 可以防止被关闭后无法保护数据（预先执行延迟重新启动指令）
+- [x] <del>可以防止被关闭后无法保护数据（预先执行延迟重新启动指令）</del>
 
-- [x] 几乎脱离外置库（只使用C++内核与系统内置指令）
+- [x] <del>几乎脱离外置库（只使用C++内核与系统内置指令）</del>
 
 - [ ] 将 Code 以加密方式存储到本地，然后通过读取这个 Code，进行 2ndVerify 的运作
 

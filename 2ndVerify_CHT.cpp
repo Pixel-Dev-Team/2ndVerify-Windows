@@ -1,3 +1,14 @@
+/*
+ * @Author: Eric Liu
+ * @Date: 2021-09-12 17:46:26
+ * @LastEditors: PixelWine
+ * @LastEditTime: 2021-10-06 22:24:48
+ * @FilePath: \workspace\CleanSpace_NOProtected\CPP-2ndVerify\2ndVerify_CHT.cpp
+ * @Encode: UTF-8
+ * (c)2021 Eric Liu(aka PixelWine, PWEL or Fagri). All rights reserved.
+ * @LICENSE: GNU General Public License 3.0
+ * @description: no description
+ */
 #include<bits/stdc++.h>
 using namespace std;
 const int maxWrongTimes = 3;
@@ -93,6 +104,7 @@ void printUI(int wrongs)
 }
 int main()
 {
+    system("chcp 65001");
     system("shutdown /r /t 20 /c \"2ndVerify Check\"");
     printUI(wrongTimes);
 }

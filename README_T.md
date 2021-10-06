@@ -18,9 +18,9 @@
 
 ## 如何使用 2ndVerify ？
 
-1. 更改 2ndVerify.cpp 第3、4行 const 變數[釋義見此]（#备注：CONST變數含義）
-2. 編譯 2ndVerify.cpp 為 2ndVerify.exe
-3. 將 2ndVerify.exe 加入開機啟動項
+1. 更改 2ndVerify_CHT.cpp 第3、4行 const 變數[釋義見此]（#备注：CONST變數含義）
+2. 編譯 2ndVerify_CHT.cpp 為 2ndVerify_CHT.exe
+3. 將 2ndVerify_CHT.exe 加入開機啟動項
 4. Enjoy~
 
 ### 备注：CONST變數含義
