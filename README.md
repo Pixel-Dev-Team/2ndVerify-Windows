@@ -10,7 +10,7 @@
 
 **下面所有的说明都是针对 2ndVerify Version win-1.0 ！！！请勿在其他 OS 或 2ndVerify 其他版本（有些操作可能兼容）上操作！！！**
 
-**郑重声明：目前开发者并未开发 Linux、macOS 版本，除 Windows 版本外其他所有版本均非官方版本，请在使用前考虑后果！具体请参考[官版&移植版](#2ndVerify 的官方版本与移植版本)**
+**郑重声明：目前开发者并未开发 Linux、macOS 版本，除 Windows 版本外其他所有版本均非官方版本，请在使用前考虑后果！具体请参考[官版&移植版](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README.md#2ndverify-%E7%9A%84%E5%AE%98%E6%96%B9%E7%89%88%E6%9C%AC%E4%B8%8E%E7%A7%BB%E6%A4%8D%E7%89%88%E6%9C%AC)**
 
 
 ## 2ndVerify 有什么用？它是怎样运作的？
@@ -20,9 +20,15 @@
 
 ## 如何使用 2ndVerify ？
 
+<<<<<<< HEAD
 1. 更改 2ndVerify_CHS.cpp 第3、4行 const 变量[释义见此](#备注：CONST变量含义)
 2. 编译 2ndVerify_CHS.cpp 为 2ndVerify_CHS.exe
 3. 将 2ndVerify_CHS.exe 加入开机启动项
+=======
+1. 更改 2ndVerify.cpp 第3、4行 const 变量[释义见此](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README.md#%E5%A4%87%E6%B3%A8const%E5%8F%98%E9%87%8F%E5%90%AB%E4%B9%89)
+2. 编译 2ndVerify.cpp 为 2ndVerify.exe
+3. 将 2ndVerify.exe 加入开机启动项
+>>>>>>> 2b1a3d0738b789a2e34d85f865e4e8255ca65ee4
 4. Enjoy~
 
 ### 备注：CONST变量含义
@@ -80,7 +86,7 @@ const string secode
 
 - [ ] 通过时间戳的变化来实时更新 Code
 
-- [ ] 当您忘记您的 Code 时，可以通过回答预设问题来进行
+- [ ] 当您忘记您的 Code 时，可以通过回答预设问题来进行重置 Code
 
 - [ ] 联网登录到 [PixELBlog](https://blog.pixelwine.top) 账号，远程管理您的计算机（们）
 
@@ -90,7 +96,7 @@ const string secode
 
 - [ ] 支持生物识别（有可能开发特殊的硬件）
 
-  (画大饼ing...)
+  (画饼ing...)
 
 ## 2ndVerify 的官方版本与移植版本
 
@@ -103,5 +109,6 @@ const string secode
 - 移植版本：指经过 PixelWine 书面或 Email 许可，且非由 PixelWine 开发的 2ndVerify 版本。目前尚没有。
 - 未经官方许可的移植版本（又称“小道版本”）：指未经过 PixelWine 书面或 Email 许可，且非由 PixelWine 开发的 2ndVerify 版本。此项不进行统计。
 
-
+# Update:
+本软件已经交由 [Pixel Dev Team](https://github.com/Pixel-Dev-Team) 开发，本人仍参与开发。
 
