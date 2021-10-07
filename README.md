@@ -104,5 +104,5 @@ const string secode
 - 未经官方许可的移植版本（又称“小道版本”）：指未经过 PixelWine 书面或 Email 许可，且非由 PixelWine 开发的 2ndVerify 版本。此项不进行统计。
 
 # Update:
-本软件已经交由 [Pixel Dev Team](https://github.com/Pixel-Dev-Team) 开发，本人仍参与开发。
+本软件已经交由 [PixelWine Team](https://github.com/PixelWineTeam) 开发，本人仍参与开发。
 
