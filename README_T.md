@@ -2,11 +2,11 @@
 
 [简体中文版本](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README.md)
 
-[English Version (By Bing Microsoft Translator)](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README_EN.md)
+[English Version (By DeepL Translator)](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README_EN.md)
 
 歡迎廣大貢獻者為多語言文檔提供人工翻譯！
 
-**下面所有的說明都是針對 2ndVerify Version Windows-alpha !!! 請勿在其他OS或 2ndVerify 其他版本（有些操作可能相容）上操作!!! **
+**下面所有的說明都是針對 2ndVerify Version Windows-1.0 !!! 請勿在其他OS或 2ndVerify 其他版本（有些操作可能相容）上操作!!! **
 
 **鄭重聲明：目前開發者並未開發Linux、macOS版本，除 Windows 版本外其他所有版本均非官方版本，請在使用前考慮後果！ 具體請參考[官方版和移植版](#2ndVerify 的官方版本與移植版本)**
 
@@ -23,7 +23,7 @@
 3. 將 2ndVerify_CHT.exe 加入開機啟動項
 4. Enjoy~
 
-### 备注：CONST變數含義
+### 备注：CONST 變數含義
 
 Line 3: 
 

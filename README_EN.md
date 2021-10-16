@@ -1,3 +1,4 @@
+<!--
 # 2ndVerify-Windows
 
 [简体中文版本](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README.md)
@@ -97,3 +98,111 @@ Paraphrase:
 - Ported version: refers to a 2ndVerify version that is written or emailed by PixelWine and not developed by PixelWine. Not yet.
 - Ported version without official permission (also known as the "path version"): refers to a 2ndVerify version that is not developed by PixelWine and is not developed by PixelWine. This item is not counted.
 
+-->
+# 2ndVerify-Windows
+
+[繁體中文版本(By Bing Microsoft Translator)](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README_T.md)
+
+[简体中文版本](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README.md)
+
+Contributors are welcome to provide human translations for multilingual documents!
+
+** All instructions below are for 2ndVerify Version win-1.0 !!! Please do not operate on other OS or other versions of 2ndVerify (some operations may be compatible)! ** Please do not operate on other OS or other versions of 2ndVerify (some operations may be compatible)!
+
+**Please do not operate on other OS or other versions of 2ndVerify (some operations may be compatible)! Please refer to the [official version & ported version](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README.md#2ndverify-%E7%9A%84%E5%AE%98%E6%96%B9%E7%89%88% E6%9C%AC%E4%B8%8E%E7%A7%BB%E6%A4%8D%E7%89%88%E6%9C%AC) **
+
+
+## What does 2ndVerify do? How does it work?
+
+- 2ndVerify locks your computer 2 times (3 times if you have BitLocker on the system disk) to keep your data safe
+- It manages your computer's on/off state by executing the Windows built-in ``shutdown`` command, and requires almost no external libraries.
+
+## How to use 2ndVerify?
+
+1. change the const variable in 2ndVerify.cpp, lines 3 and 4 (# Remarks: CONST variable meaning)
+2. compile 2ndVerify.cpp to 2ndVerify.exe
+3. add 2ndVerify.exe to bootloader
+4. Enjoy~
+
+### Note: The meaning of CONST variable
+
+Line 3: 
+
+```cpp
+const int maxWrongTimes
+```
+
+Default value: 3
+
+Meaning: maximum number of attempts
+
+Call: Called in the ``checkWrongMax() ``` function
+
+Importance: not recommended to increase, can be reduced or not modified
+
+Line 4: 
+
+```cpp
+const string secode
+```
+
+Default value: DEFAULT_CODE@
+
+Meaning: password
+
+Call: Called in the ```isRightCode() ``` function
+
+Importance: ⭐ Recommended changes
+
+## What should I do if I forget the Code?
+
+- Delete the bootup item via PE or safe mode
+- By special means, transfer Save2ndVerify.bat to your computer and boot it up **quickly** and execute the file to remove the 2ndVerify restriction ***at that time*** and so on.
+- and so on.
+
+
+## What are the developed or pending features of 2ndVerify?
+
+- [x] <del>Verify that the entered Code matches the stored Code</del>
+
+- [x] <del>Limit the maximum number of attempts</del>
+
+- [x] <del>Automatically restart after maximum attempts</del>
+
+- [x] <del>Protects data from being shut down (pre-execute delayed restart command)</del>
+
+- [x] <del>Almost disconnects from external libraries (only uses C++ kernel and system built-in instructions)</del>
+
+- [ ] Store Code locally in encrypted form, then read this Code to perform 2ndVerify operations
+
+- [ ] Implement the GUI
+
+- [ ] Update Code in real time with timestamp changes
+
+- [ ] When you forget your Code, you can reset it by answering a preset question
+
+- [ ] Login to the [PixELBlog](https://blog.pixelwine.top) account to manage your computer(s) remotely
+
+- [ ] Connect to a third-party platform
+
+- [ ] Remote login via third-party platform API
+
+- [ ] Biometric support (with the possibility of developing special hardware)
+
+  (Doing...)
+
+## Official and ported versions of 2ndVerify
+
+Definition.
+
+- Verified official version: refers to the 2ndVerify version that has been verified as viable by PixelWine's three machines (VirtualBox Windows XP & VirtualBox Windows 7 & Physical Windows 10) and developed by PixelWine. Not available yet.
+
+- Official Version: Refers to the 2ndVerify version developed by PixelWine, currently only 2ndVerify Version Windows-alpha is available.
+- Official Verified Port: A port that has been verified by PixelWine on three machines (VirtualBox Windows XP & VirtualBox Windows 7 & Physical Windows 10). Not available yet.
+- Ported version: A 2ndVerify version that is licensed in writing or by email from PixelWine and not developed by PixelWine. Not available at this time.
+- Unofficially licensed ports (aka "trail versions"): 2ndVerify versions not licensed in writing or by Email by PixelWine and not developed by PixelWine. This item is not counted.
+
+
+
+
+Translated with www.DeepL.com/Translator (free version)

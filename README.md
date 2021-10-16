@@ -4,7 +4,7 @@
 
 [繁體中文版本 (By Bing Microsoft Translator)](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README_T.md)
 
-[English Version (By Bing Microsoft Translator)](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README_EN.md)
+[English Version (By DeepL Translator)](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README_EN.md)
 
 欢迎广大贡献者为多语言文档提供人工翻译！
 
@@ -102,7 +102,3 @@ const string secode
 - 经官方验证的移植版本：指经过 PixelWine 三机(VirtualBox Windows XP & VirtualBox Windows 7 & Physical Windows 10)验证可行性的移植版本。目前尚没有。
 - 移植版本：指经过 PixelWine 书面或 Email 许可，且非由 PixelWine 开发的 2ndVerify 版本。目前尚没有。
 - 未经官方许可的移植版本（又称“小道版本”）：指未经过 PixelWine 书面或 Email 许可，且非由 PixelWine 开发的 2ndVerify 版本。此项不进行统计。
-
-# Update:
-本软件已经交由 [Pixel Dev Team](https://github.com/Pixel-Dev-Team) 开发，本人仍参与开发。
-
