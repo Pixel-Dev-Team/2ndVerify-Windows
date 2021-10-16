@@ -20,15 +20,9 @@
 
 ## 如何使用 2ndVerify ？
 
-<<<<<<< HEAD
 1. 更改 2ndVerify_CHS.cpp 第3、4行 const 变量[释义见此](#备注：CONST变量含义)
 2. 编译 2ndVerify_CHS.cpp 为 2ndVerify_CHS.exe
 3. 将 2ndVerify_CHS.exe 加入开机启动项
-=======
-1. 更改 2ndVerify.cpp 第3、4行 const 变量[释义见此](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README.md#%E5%A4%87%E6%B3%A8const%E5%8F%98%E9%87%8F%E5%90%AB%E4%B9%89)
-2. 编译 2ndVerify.cpp 为 2ndVerify.exe
-3. 将 2ndVerify.exe 加入开机启动项
->>>>>>> 2b1a3d0738b789a2e34d85f865e4e8255ca65ee4
 4. Enjoy~
 
 ### 备注：CONST变量含义
