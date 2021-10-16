@@ -1,7 +1,5 @@
 # 2ndVerify-Windows
 
-> P.S. The contents of the following two documents may not have been updated for a long time, so be careful please.
-
 [繁體中文版本 (By Bing Microsoft Translator)](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README_T.md)
 
 [English Version (By DeepL Translator)](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README_EN.md)
