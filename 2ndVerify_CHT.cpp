@@ -9,7 +9,7 @@
  * @LICENSE: GNU General Public License 3.0
  * @description: no description
  */
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 const int maxWrongTimes = 3;
 const string secode = "DEFAULT_CODE@"; // second_code -> seccode -> secode
@@ -17,13 +17,13 @@ int wrongTimes;
 void reboot(void)
 {
     system("COLOR B0");
-    printf("Strict Data Protection: Sorry, you have tried too many times, and the system will restart in 3 seconds.\n");
-    system("shutdown /r /t 3 /c \"2ndVerify Code Error\"");
+    printf("SDP: 抱歉，您嘗試次數過多，系統將在三秒内重新啓動。\n");
+    system("shutdown /r /t 3 /c \"2ndVerify 驗證失敗\"");
     return;
 }
 bool isRightCode(string code)
 {
-    if(secode==code)
+    if (secode == code)
     {
         return true;
     }
@@ -32,79 +32,81 @@ bool isRightCode(string code)
 void codeWrong(void)
 {
     system("COLOR 4F");
-    printf("The Code you entered is wrong.");
-
+    printf("您輸入的代碼不正確。");
 }
 bool checkWrongMax(void)
 {
-    if(wrongTimes>=maxWrongTimes)
+    if (wrongTimes >= maxWrongTimes)
         return true;
     return false;
 }
 void printUI(int wrongs)
 {
-    if(wrongs>0)
+    if (wrongs > 0)
     {
         system("COLOR 9F");
-        cout<<"Please input your code again..."<<endl;
+        cout << "請輸入 2ndVerify 代碼。" << endl;
         string inputCode;
-        cin>>inputCode;
-        if(isRightCode(inputCode))
+        cin >> inputCode;
+        if (isRightCode(inputCode))
         {
-            cout<<"Welcome! Your code is RIGHT!"<<endl;
+            cout << "歡迎您！您的代碼是正確的！" << endl;
             system("shutdown /a");
-            cout<<"Press Any Key to Continue..."<<endl;
-            system("pause>nul");
+            cout << "按下 Enter 鍵退出。" << endl;
+            system("pause >nul");
             exit(0);
         }
         else
         {
             codeWrong();
-            cout<<"Press any key to Continue..."<<endl;
+            cout << "按下 Enter 鍵繼續。" << endl;
             system("pause>nul");
             wrongTimes++;
-            if(checkWrongMax())
+            if (checkWrongMax())
             {
                 reboot();
             }
-            else printUI(wrongTimes);
+            else
+                printUI(wrongTimes);
         }
     }
     else
     {
         system("COLOR 9F");
-        printf("The system administrator has set Strict Data Protection for this computer.\n");
-        printf("Please use the 2ndCode published by the administrator to log in to this computer.\n");
-        cout<<"Now please input your code..."<<endl;
+        printf("管理員已爲這臺計算機開啓了高級數據保護 SDP 功能。\n");
+        printf("請使用管理員發佈的 2ndVerify 代碼登錄到這臺計算機。\n");
+        cout << "請輸入 2ndVerify 代碼。" << endl;
         string inputCode;
-        cin>>inputCode;
+        cin >> inputCode;
         system("cls");
-        cout<<"The system is checking the code you entered..."<<endl;
-        if(isRightCode(inputCode))
+        cout << "系統正在運行中..." << endl;
+        if (isRightCode(inputCode))
         {
-            cout<<"Welcome! Your code is RIGHT!"<<endl;
+            cout << "歡迎您！您的代碼是正確的！" << endl;
             system("shutdown /a");
-            cout<<"Press Any Key to Continue..."<<endl;
-            system("pause>nul");
+            cout << "按下 Enter 鍵退出。" << endl;
+            system("pause >nul");
             exit(0);
         }
         else
         {
             codeWrong();
-            cout<<"Press any key to Continue..."<<endl;
+            cout << "按下 Enter 鍵繼續。" << endl;
             system("pause>nul");
             wrongTimes++;
-            if(checkWrongMax())
+            if (checkWrongMax())
             {
                 reboot();
             }
-            else printUI(wrongTimes);
+            else
+                printUI(wrongTimes);
         }
     }
 }
 int main()
 {
     system("chcp 65001");
-    system("shutdown /r /t 20 /c \"2ndVerify Check\"");
+    system("title 内建數據保護程式: 2ndVerify -- Omita 版本");
+    system("shutdown /r /t 20 /c \"2ndVerify 驗證失敗\"");
     printUI(wrongTimes);
 }

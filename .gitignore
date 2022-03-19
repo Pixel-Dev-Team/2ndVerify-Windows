@@ -34,3 +34,15 @@
 
 # Directorys
 Releases/
+
+# 20220319
+tinyxml/
+bin/
+obj/
+str/
+*.cbp
+*.layout
+get.cpp
+md5.cpp
+md5.h
+xmlprocess.h

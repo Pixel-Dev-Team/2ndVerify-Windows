@@ -1,4 +1,6 @@
 #include<bits/stdc++.h>
+// #include "tinyxml/tinyxml.h"
+// #include "xmlprocess.h"
 using namespace std;
 const int maxWrongTimes = 3;
 const string secode = "DEFAULT_CODE@"; // second_code -> seccode -> secode
@@ -93,6 +95,7 @@ void printUI(int wrongs)
 }
 int main()
 {
+    system("title 2ndVerify Omita");
     system("shutdown /r /t 20 /c \"2ndVerify Check\"");
     printUI(wrongTimes);
 }

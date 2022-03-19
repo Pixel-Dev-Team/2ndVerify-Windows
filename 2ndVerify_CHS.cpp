@@ -1,16 +1,5 @@
-/*
- * @Author: Eric Liu
- * @Date: 2021-09-12 17:46:20
- * @LastEditors: PixelWine
- * @LastEditTime: 2021-10-06 22:30:54
- * @FilePath: \workspace\CleanSpace_NOProtected\CPP-2ndVerify\2ndVerify_CHS.cpp
- * @Encode: UTF-8
- * (c)2021 Eric Liu(aka PixelWine, PWEL or Fagri). All rights reserved.
- * @LICENSE: GNU General Public License 3.0
- * @description: v1.0
- */
 #include<bits/stdc++.h>
-#define __2NDVERIFY_version__ 1.0
+#define __2NDVERIFY_version__ 
 using namespace std;
 const int maxWrongTimes = 3;
 const string secode = "DEFAULT_CODE@"; // second_code -> seccode -> secode
@@ -106,6 +95,7 @@ void printUI(int wrongs)
 int main()
 {
     system("chcp 65001");
+    system("title 2ndVerify -- Omita 版本");
     system("shutdown /r /t 20 /c \"2ndVerify Check\"");
     printUI(wrongTimes);
 }
