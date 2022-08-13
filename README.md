@@ -22,10 +22,39 @@
 
 ### 源码编译
 
-1. 更改 2ndVerify_generic.cpp 第3、4行 const 变量[释义见此](#备注：CONST变量含义)
-2. 编译 2ndVerify_generic.cpp。
+<!-- 1. 更改 2ndVerify.generic.cpp 第3、4行 const 变量，释义见下。
+2. 编译 2ndVerify.generic.cpp。
 3. 将编译后的二进制文件加入开机启动项
 4. Enjoy~
+-->
+1. 从 GitHub `clone` 本仓库。
+2. 对于不同平台，使用以下命令：
+
+Linux only
+
+```bash
+make install --prefix=/path/to/2ndVerify
+# prefix 缺省值为 /usr/local/
+```
+
+Linux or macOS
+
+```bash
+sudo chmod +x ./unix.sh
+./unix.sh
+# 默认安装到 /usr/local/
+# 如想更改安装位置 可以将第二行的 $prefix=/usr/local/ 改为 $prefix=/path/to/2ndVerify
+```
+
+Windows
+
+```cmd
+start win.cmd
+rem 默认安装到 D:\Program Files\
+rem 如想更改安装位置 可以将第三行的 set PREFIX="D:\Program Files 更改为 set PREFIX="/path/to/2ndVerify
+rem 注意！！！只有一个引号！！！
+```
+
 
 ### 获取二进制包
 详见 Releases.
