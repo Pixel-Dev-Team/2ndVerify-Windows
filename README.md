@@ -43,7 +43,7 @@ Linux or macOS
 sudo chmod +x ./unix.sh
 ./unix.sh
 # 默认安装到 /usr/local/
-# 如想更改安装位置 可以将第二行的 $prefix=/usr/local/ 改为 $prefix=/path/to/2ndVerify
+# 如想更改安装位置 可以将第二行的 prefix=/usr/local/ 改为 prefix=/path/to/2ndVerify
 ```
 
 Windows
