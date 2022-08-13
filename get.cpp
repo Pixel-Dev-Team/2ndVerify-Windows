@@ -1,4 +1,4 @@
-#include <iostream>  
+#include <bits/stdc++.h>
 #include "md5.h"  
   
 using namespace std;  

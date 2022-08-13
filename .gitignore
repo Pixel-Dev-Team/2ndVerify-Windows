@@ -45,4 +45,10 @@ str/
 get.cpp
 md5.cpp
 md5.h
-xmlprocess.h
+# xmlprocess.h
+
+# 20220813
+2ndVerify.cpp
+2ndVerify_CHS.cpp
+2ndVerify_CHT.cpp
+
