@@ -3,7 +3,7 @@
 
 [简体中文版本](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README.md)
 
-[繁體中文版本 (By Bing Microsoft Translator)](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README_T.md)
+<!-- [繁體中文版本 (By Bing Microsoft Translator)](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README_T.md) -->
 
 Welcome to the vast number of contributors for multilingual documents to provide human translation!
 

@@ -1,27 +1,34 @@
 # 2ndVerify-Windows
 
-[繁體中文版本 (By Bing Microsoft Translator)](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README_T.md)
+<!-- [繁體中文版本 (By Bing Microsoft Translator)](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README_T.md) -->
 
-[English Version (By DeepL Translator)](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README_EN.md)
+[English Docs (By DeepL Translator)](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README_EN.md)
 
 欢迎广大贡献者为多语言文档提供人工翻译！
 
 **下面所有的说明都是针对 2ndVerify Version win-1.0 ！！！请勿在其他 OS 或 2ndVerify 其他版本（有些操作可能兼容）上操作！！！**
 
-**郑重声明：目前开发者并未开发 Linux、macOS 版本，除 Windows 版本外其他所有版本均非官方版本，请在使用前考虑后果！具体请参考[官版&移植版](https://github.com/PixelWine/2ndVerify-Windows/blob/main/README.md#2ndverify-%E7%9A%84%E5%AE%98%E6%96%B9%E7%89%88%E6%9C%AC%E4%B8%8E%E7%A7%BB%E6%A4%8D%E7%89%88%E6%9C%AC)**
+**郑重声明：目前开发者并未开发 Linux、macOS 版本，除 Windows 版本外其他所有版本均非官方版本，请在使用前考虑后果！具体请参考*官版&移植版*。
 
 
 ## 2ndVerify 有什么用？它是怎样运作的？
 
-- 2ndVerify 可以帮您2次锁定您的计算机（如果您开启了系统盘 BitLocker，那么是3次），保障您的数据安全
-- 它通过执行 Windows 系统内置的 ```shutdown``` 指令来管理您的计算机的开关机状态，几乎不需要任何外置库。
+- 2ndVerify 可以帮您 2 次锁定您的计算机（如果您开启了系统盘 BitLocker，那么是3次），保障您的数据安全
+- 它通过执行各个系统内置的指令来管理您的计算机的开关机状态，几乎不需要任何外置库。
 
 ## 如何使用 2ndVerify ？
 
-1. 更改 2ndVerify_CHS.cpp 第3、4行 const 变量[释义见此](#备注：CONST变量含义)
-2. 编译 2ndVerify_CHS.cpp 为 2ndVerify_CHS.exe
-3. 将 2ndVerify_CHS.exe 加入开机启动项
+以下两种方式二选一即可。
+
+### 源码编译
+
+1. 更改 2ndVerify_generic.cpp 第3、4行 const 变量[释义见此](#备注：CONST变量含义)
+2. 编译 2ndVerify_generic.cpp。
+3. 将编译后的二进制文件加入开机启动项
 4. Enjoy~
+
+### 获取二进制包
+详见 Releases.
 
 ### 备注：CONST变量含义
 
