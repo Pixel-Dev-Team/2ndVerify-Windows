@@ -18,7 +18,7 @@
 
 ## 如何使用 2ndVerify ？
 
-以下两种方式二选一即可。
+(1) 安装：以下两种方式二选一即可。
 
 ### 源码编译
 
@@ -51,7 +51,7 @@ Windows
 ```cmd
 start win.cmd
 rem 默认安装到 D:\Program Files\
-rem 如想更改安装位置 可以将第三行的 set PREFIX="D:\Program Files 更改为 set PREFIX="/path/to/2ndVerify
+rem 如想更改安装位置 自行更改脚本第 3~4 行
 rem 注意！！！只有一个引号！！！
 ```
 
@@ -59,7 +59,18 @@ rem 注意！！！只有一个引号！！！
 ### 获取二进制包
 详见 Releases.
 
-### 备注：CONST变量含义
+(2) 配置：
+
+For all Platform:
+
+```sh
+2vconf passwd YOUR_PASSWD
+2vconf maxtry YOUR_SETTING_OF_MAX_TRYING_TIMES
+2vconf timeout YOUR_SETTING_OF_TIMEOUT
+```
+
+** 不配置是不能正常使用的！！！会导致无法开机等严重错误！！！ **
+## 备注：CONST变量含义
 
 Line 3: 
 
