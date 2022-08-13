@@ -69,7 +69,7 @@ For all Platform:
 2vconf timeout YOUR_SETTING_OF_TIMEOUT
 ```
 
-** 不配置是不能正常使用的！！！会导致无法开机等严重错误！！！ **
+**不配置是不能正常使用的！！！会导致无法开机等严重错误！！！**
 ## 备注：CONST变量含义
 
 Line 3: 
